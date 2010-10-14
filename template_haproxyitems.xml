@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<zabbix_export version="1.0" date="14.10.10" time="14.45">
+	<hosts>
+		<host name="Template_HAProxyItem">
+			<useip>0</useip>
+			<dns></dns>
+			<ip>0.0.0.0</ip>
+			<port>10050</port>
+			<status>3</status>
+			<groups>
+				<group>Templates</group>
+			</groups>
+			<items>
+				<item type="2" key="haproxy.bin" value_type="0">
+					<description>HAProxy:Mbps in</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units>bits</units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>8</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.bout" value_type="0">
+					<description>HAProxy:Mbps out</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units>bits</units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>8</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.econ" value_type="0">
+					<description>HAProxy:Connection errors per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.ereq" value_type="0">
+					<description>HAProxy:Request errors per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.eresp" value_type="0">
+					<description>HAProxy:Response errors per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.hrsp_1xx" value_type="3">
+					<description>HAProxy:http 1xx responses per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.hrsp_2xx" value_type="3">
+					<description>HAProxy:http 2xx responses per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.hrsp_3xx" value_type="3">
+					<description>HAProxy:http 3xx responses per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.hrsp_4xx" value_type="3">
+					<description>HAProxy:http 4xx responses per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.hrsp_5xx" value_type="3">
+					<description>HAProxy:http 5xx responses per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.pxname" value_type="1">
+					<description>HAProxy:proxy name</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>0</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.rate" value_type="3">
+					<description>HAProxy:rate (sessions per second)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units>sessions</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.req_rate" value_type="3">
+					<description>HAProxy:HTTP rate (request per second)</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.scur" value_type="3">
+					<description>HAProxy:current sessions</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.smax" value_type="3">
+					<description>HAProxy:max sessions</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.stot" value_type="0">
+					<description>HAProxy:sessions per second</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.svname" value_type="1">
+					<description>HAProxy:service name</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>7</history>
+					<trends>0</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+				<item type="2" key="haproxy.wretr" value_type="0">
+					<description>HAProxy:Retries (warning) per minute</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>30</delay>
+					<history>31</history>
+					<trends>356</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>1</multiplier>
+					<delta>1</delta>
+					<formula>60</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid></snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+				</item>
+			</items>
+		</host>
+	</hosts>
+</zabbix_export>
