@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<zabbix_export version="1.0" date="14.10.10" time="14.45">
+<zabbix_export version="1.0" date="14.10.10" time="15.19">
 	<hosts>
 		<host name="Template_HAProxyItem">
 			<useip>0</useip>
@@ -34,6 +34,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.bout" value_type="0">
 					<description>HAProxy:Mbps out</description>
@@ -58,6 +61,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.econ" value_type="0">
 					<description>HAProxy:Connection errors per minute</description>
@@ -82,6 +88,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.ereq" value_type="0">
 					<description>HAProxy:Request errors per minute</description>
@@ -106,6 +115,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.eresp" value_type="0">
 					<description>HAProxy:Response errors per minute</description>
@@ -130,6 +142,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.hrsp_1xx" value_type="3">
 					<description>HAProxy:http 1xx responses per minute</description>
@@ -154,6 +169,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.hrsp_2xx" value_type="3">
 					<description>HAProxy:http 2xx responses per minute</description>
@@ -178,6 +196,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.hrsp_3xx" value_type="3">
 					<description>HAProxy:http 3xx responses per minute</description>
@@ -202,6 +223,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.hrsp_4xx" value_type="3">
 					<description>HAProxy:http 4xx responses per minute</description>
@@ -226,6 +250,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.hrsp_5xx" value_type="3">
 					<description>HAProxy:http 5xx responses per minute</description>
@@ -250,6 +277,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.pxname" value_type="1">
 					<description>HAProxy:proxy name</description>
@@ -274,6 +304,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.rate" value_type="3">
 					<description>HAProxy:rate (sessions per second)</description>
@@ -298,6 +331,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.req_rate" value_type="3">
 					<description>HAProxy:HTTP rate (request per second)</description>
@@ -322,6 +358,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.scur" value_type="3">
 					<description>HAProxy:current sessions</description>
@@ -346,6 +385,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.smax" value_type="3">
 					<description>HAProxy:max sessions</description>
@@ -370,6 +412,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.stot" value_type="0">
 					<description>HAProxy:sessions per second</description>
@@ -394,6 +439,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.svname" value_type="1">
 					<description>HAProxy:service name</description>
@@ -418,6 +466,9 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 				<item type="2" key="haproxy.wretr" value_type="0">
 					<description>HAProxy:Retries (warning) per minute</description>
@@ -442,8 +493,122 @@
 					<snmpv3_securitylevel>0</snmpv3_securitylevel>
 					<snmpv3_authpassphrase></snmpv3_authpassphrase>
 					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>haproxy</application>
+					</applications>
 				</item>
 			</items>
+			<graphs>
+				<graph name="HAProxy:Responses per minute by type" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_HAProxyItem:haproxy.hrsp_4xx">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>EE00EE</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.hrsp_2xx">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.hrsp_1xx">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>AAAAAA</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.hrsp_5xx">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>DD0000</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.hrsp_3xx">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>DDDD00</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="HAProxy:traffic and requests per second" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_HAProxyItem:haproxy.stot">
+							<drawtype>2</drawtype>
+							<sortorder>0</sortorder>
+							<color>EE00EE</color>
+							<yaxisside>1</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.req_rate">
+							<drawtype>2</drawtype>
+							<sortorder>0</sortorder>
+							<color>00DDDD</color>
+							<yaxisside>1</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.bout">
+							<drawtype>4</drawtype>
+							<sortorder>0</sortorder>
+							<color>0000EE</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_HAProxyItem:haproxy.bin">
+							<drawtype>4</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+			</graphs>
 		</host>
 	</hosts>
 </zabbix_export>
