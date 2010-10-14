@@ -6,7 +6,7 @@ use Time::HiRes qw( clock );
 use Getopt::Std;
 my $agent = new LWP::UserAgent;
 
-my $opt_string = 'c:u:z:s:p:r:C:h:H:vd';
+my $opt_string = 'c:u:z:s:p:r:C:h:H:vdt';
 getopts($opt_string, \%opt) or usage();
 
 sub usage()
@@ -41,11 +41,13 @@ sub usage()
     print STDERR "   -h <hostname>    Optional Host: <hostname> header parameter.\n";
     print STDERR "   -v               turn verbose mode on.\n";
     print STDERR "   -d               turn debug mode on (prints more than verbose).\n";
+    print STDERR "   -t               Just test, dont send anything to zabbix server.\n";
     exit;
 }
 
 my $verbose = $opt{v} || $opt{d};
 my $debug = $opt{d};
+my $just_test = $opt{t};
 
 #
 # CONFIGURATION
@@ -234,7 +236,10 @@ sub send_data_item {
     }
     my $var = 'haproxy.' . $param;
     my $cmd = "$zabbix_sender_path -z $zabbix_server -p $zabbix_port -s \"$zabbix_name\" -k $var -o $value";
-    `$cmd`;
+    $debug and print "Command: $cmd\n";
+    if (!$just_test) {
+	`$cmd`;
+    }
 }
 
 sub parse_line {
@@ -259,7 +264,7 @@ sub parse_haproxy_conf()
     open (FILE, $filename) or die("Could not open haproxy config file at $filename");
     while (<FILE>) {
 	my $line = $_;
-	if ($line =~ /^frontend[[:space:]]+([^[:space:]]+).+#.*@zabbix_frontend\((.+)\)/) {
+	if ($line =~ /^(?:frontend|listen)[[:space:]]+([^[:space:]]+).+#.*@zabbix_frontend\((.+)\)/) {
 	    $debug and print "found frontend mapping $1 to $2\n";
 	    $track_frontends{$1} = $2;
 	}
