@@ -1,0 +1,31 @@
+Usage: ./zabbix_haproxy [arguments]
+This program reads the HAProxy config file for special notations and uses this info
+to send data about certain hosts in haproxy to zabbix.
+
+The haproxy config has 'frontend' sections and 'server' lines. These lines are annotated
+with a special comment which tells this script that the frontend or server is tagged for
+zabbix.
+
+Example config line where the frontend named 'irc-galleria' (the former) is sent to zabbix
+host named 'irc-galleria' (the later).
+frontend irc-galleria # (irc-galleria)
+
+Another example for a server where server named suomirock is sent to zabbix host named
+suomirock.web.pri
+  server suomirock 10.3.0.24:80 check weight 16 maxconn 200   # (suomirock.web.pri)
+
+All hosts in zabbix must be tagged to use Template_HAProxyItem
+
+Command line arguments:
+   -c <filename>    HAProxy config file
+   -u <url>         URL where the haproxy statistics are. ex: http://foobar.com/haproxy?stats;csv
+   -z <full path>   Path to zabbix_sender
+   -s <hostname>    Zabbix server host.
+   -p <port>        Zabbix trapper port. DEFAULT: 10051
+   -H <host>:<port> Hostname where the realm is active if HTTP Authentication is to be used. OPTIONAL
+   -r <realm>       HTTP Authentication basic realm OPTIONAL
+   -C <user>:<pass> HTTP Authentication username and password OPTIONAL
+   -h <hostname>    Optional Host: <hostname> header parameter.
+   -v               turn verbose mode on.
+   -d               turn debug mode on (prints more than verbose).
+
