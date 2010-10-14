@@ -73,7 +73,7 @@ if ($opt{r} and $opt{C} and $opt{H}) {
 }
 
 # Path to zabbix_sender command
-my $zabbix_sender_path = "/galleria/bin/zabbix_sender";
+my $zabbix_sender_path = $opt{z} ? $opt{z} : "zabbix_sender";
 
 # Zabbix server
 my $zabbix_server = $opt{s} or usage();
