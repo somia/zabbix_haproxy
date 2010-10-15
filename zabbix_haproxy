@@ -28,15 +28,15 @@ sub usage()
     print STDERR "\n";
     print STDERR "All hosts in zabbix must be tagged to use Template_HAProxyItem\n";
     print STDERR "\n";
-    print STDERR "Command line arguments:\n";
+    print STDERR "Command line arguments: You need to supply at least -c, -u and -s arguments.\n";
     print STDERR "   -c <filename>    HAProxy config file\n";
     print STDERR "   -u <url>         URL where the haproxy statistics are. ex: http://foobar.com/haproxy?stats;csv\n";
-    print STDERR "   -z <full path>   Path to zabbix_sender\n";
     print STDERR "   -s <hostname>    Zabbix server host.\n";
     print STDERR "   -p <port>        Zabbix trapper port. DEFAULT: 10051\n";
-    print STDERR "   -H <host>:<port> Hostname where the realm is active if HTTP Authentication is to be used. OPTIONAL\n";
-    print STDERR "   -r <realm>       HTTP Authentication basic realm OPTIONAL\n";
+    print STDERR "   -z <full path>   Path to zabbix_sender OPTIONAL\n";
     print STDERR "   -C <user>:<pass> HTTP Authentication username and password OPTIONAL\n";
+    print STDERR "   -H <host>:<port> Hostname where the realm is active if HTTP Authentication is to be used. Defaults to host in -u <url> OPTIONAL\n";
+    print STDERR "   -r <realm>       HTTP Authentication basic realm, defaults to \"HAProxy Statistics\" OPTIONAL\n";
     print STDERR "   -h <hostname>    Optional Host: <hostname> header parameter.\n";
     print STDERR "   -v               turn verbose mode on.\n";
     print STDERR "   -d               turn debug mode on (prints more than verbose).\n";
@@ -62,15 +62,24 @@ my $url = $opt{u} or usage();;
 # Host header in the http request
 my $host_header = $opt{h};
 
-if ($opt{r} and $opt{C} and $opt{H}) {
-    # Setup basic authentication
-    if ($opt{H} !~ /:/) {
-	print "You need to have both hostname AND post number in -H\n";
-	usage();
+my $http_realm = $opt{r} ? $opt{r} : 'HAProxy Statistics';
+
+my $http_host = $opt{H};
+if (!$http_host) {
+    if ($url =~ m|^http://(.+?)(:\d+)?/|) {
+	$http_host = $1 . ($2 ? $2 : ':80');
     }
+}
+
+if ($http_host !~ /:\d+/) {
+    $http_host .= ':80';
+}
+
+if ($opt{C}) {
+    # Setup basic authentication
     my ($user, $pass) = split(/:/, $opt{C});
-    $verbose and print "Using basic authentication: realm \"$opt{r}\", username: $user, password: $pass\n";
-    $agent->credentials($opt{H}, $opt{r}, $user => $pass);
+    $verbose and print "Using basic authentication: server: $http_host, realm \"$http_realm\", username: $user, password: $pass\n";
+    $agent->credentials($http_host, $http_realm, $user => $pass);
 }
 
 # Path to zabbix_sender command
@@ -113,6 +122,9 @@ if($pid == 0) {
     } else {
 	$response = $agent->get($url);
     }
+    if (!$response->is_success) {
+	$pipe->print("FAILURE, response code: " . $response->status_line);
+    }
     $pipe->print($response->content);
     exit;
 }
@@ -127,7 +139,13 @@ my %frontends = ();
 my %nodes = ();
 
 if($finished) {
+    my $first_line = 1;
     foreach my $line ($pipe->getlines) {
+	if ($first_line and $line =~ /^FAILURE, response code:/) {
+	    print STDERR "$line";
+	    exit(1);
+	}
+	$first_line = 0;
 	$debug and print "Got line $line";
 	if ($line =~ /^#/) {
 	    next;
